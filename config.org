@@ -1,0 +1,21 @@
+#+LANGUAGE: es
+#+OPTIONS:   num:t toc:nil \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+LaTeX_CLASS: beamer
+#+LATEX_CLASS_OPTIONS: [spanish, xcolor={usenames,svgnames,dvipsnames}]
+#+BEAMER_FONT_THEME: serif
+#+LATEX_HEADER: \usecolortheme{rose}
+#+LATEX_HEADER: \setbeamercolor{alerted text}{fg=DarkBlue}
+#+LATEX_HEADER: \setbeamerfont{alerted text}{series=\mdseries}
+#+LATEX_HEADER: \setbeamerfont{block title}{series=\scshape}
+#+LATEX_HEADER: \setbeamercolor{block title}{bg=structure.fg!40!bg!50!bg}
+#+LATEX_HEADER: \setbeamercolor{block body}{use=block title,bg=block title.bg!50}
+#+LATEX_HEADER: \setbeamertemplate{navigation symbols}{}
+#+LATEX_HEADER: \setbeamertemplate{blocks}[rounded][shadow=false]
+#+LATEX_HEADER: \AtBeginSection[]{\begin{frame}{Índice}\tableofcontents[currentsection]\end{frame}}
+#+LATEX_HEADER: \usepackage[spanish]{babel}
+#+LATEX_HEADER: \usepackage{mathpazo}
+#+LATEX_HEADER: \hypersetup{colorlinks=true, linkcolor=Blue, urlcolor=Blue}
+#+LATEX_HEADER: \logo{\makebox[0.95\paperwidth]{\includegraphics[width=1.5cm,keepaspectratio]{images/LogoUPM.pdf}\hfill\includegraphics[width=1.5cm,keepaspectratio]{images/LogoETSIDI.pdf}}}
+#+LATEX_HEADER: \titlegraphic{\includegraphics[width=0.7\textwidth]{images/entrada-escuela}}

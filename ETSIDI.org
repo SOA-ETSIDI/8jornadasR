@@ -1,0 +1,70 @@
+#+TITLE: Gestión académica de una escuela universitaria con R y shiny
+
+#+AUTHOR: Oscar Perpiñán Lamigueiro
+
+#+DATE: ETSIDI - UPM
+
+#+STARTUP: beamer
+#+SETUPFILE: config.org
+#+OPTIONS: H:2
+
+* Introducción
+
+** Contexto
+
+- ETS de Ingeniería con 2700 alumnos en 10 titulaciones diferentes.
+- Numerosos grupos de matriculación (horarios).
+- Alta ocupación de aulas.
+- Planes Bolonia:
+  - Evaluación continua (frecuentes exámenes)
+  - Flexibilidad de técnicas docentes
+
+** Contexto 
+*** Necesaria renovación de herramientas
+
+- Gestión de aulas
+- Elaboración y publicación de horarios docentes y calendario escolar
+- Aprobación, modificación y publicación de horarios del profesorado
+
+
+* Aplicaciones web
+
+** Horarios del profesorado
+*** Procedimiento
+- Cada profesor tiene un enlace único que le permite cumplimentar (y modificar) sus horarios de docencia y tutorías.
+- Cada director del departamento tiene un enlace privado para revisar estos horarios y publicarlos.
+- Una web recopila los horarios de todos los profesores, una vez publicados.
+- Otra web permite la búsqueda libre.
+** 
+   :PROPERTIES:
+   :CUSTOM_ID: plain
+   :END:
+[[file:images/tutorias.png]]
+
+http://programas.etsidi.upm.es/SOA/tutorias/
+
+** 
+   :PROPERTIES:
+   :CUSTOM_ID: plain
+   :END:
+[[file:images/tutorias_OPL.pdf]]
+
+** 
+   :PROPERTIES:
+   :CUSTOM_ID: plain
+   :END:
+[[file:images/buscador.png]]
+
+http://programas.etsidi.upm.es/SOA/buscador/
+
+** Horarios del profesorado
+*** Aspectos importantes del código
+- Aplicaciones basadas en shiny con la ayuda de [[https://daattali.com/shiny/shinyjs-demo/][shinyjs]]
+- [[https://github.com/Rdatatable/data.table/wiki][DT]] (interfaz para DataTables de JavaScript) en modo lectura y escritura ([[https://yihui.shinyapps.io/DT-proxy/][dataTableProxy]]).
+- [[https://github.com/Rdatatable/data.table/wiki][data.table]] detrás del escenario
+- PDF generado automáticamente a través de [[http://orgmode.org/][Org]] (y [[https://www.ctan.org/pkg/tcolorbox][tcolorbox]] de LaTeX)
+** Horarios docentes
+
+** Calendario escolar
+
+* Análisis y representación de datos
