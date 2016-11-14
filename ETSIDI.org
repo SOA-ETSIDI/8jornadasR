@@ -64,6 +64,31 @@ http://programas.etsidi.upm.es/SOA/buscador/
 - [[https://github.com/Rdatatable/data.table/wiki][data.table]] detrás del escenario
 - PDF generado automáticamente a través de [[http://orgmode.org/][Org]] (y [[https://www.ctan.org/pkg/tcolorbox][tcolorbox]] de LaTeX)
 ** Horarios docentes
+- Aplicación shiny basada en [[http://jrowen.github.io/rhandsontable/][rhandsontable]] (tabla editable)
+- Produce:
+  - Ficheros PDF mediante [[https://github.com/SOA-ETSIDI/horarios/blob/master/csv2tt.R][una función]] basada en una [[https://github.com/SOA-ETSIDI/horarios/blob/master/timetable.tex][plantilla LaTeX]] que usa [[https://en.wikipedia.org/wiki/PGF/TikZ][TikZ]]
+  - Ficheros iCalendar mediante dos [[https://github.com/SOA-ETSIDI/misc/blob/master/funciones.R][funciones propias]].
+** 
+   :PROPERTIES:
+   :CUSTOM_ID: plain
+   :END:
+[[file:images/horarios.png]]
+
+** 
+   :PROPERTIES:
+   :CUSTOM_ID: plain
+   :END:
+[[file:images/horarios_tt.png]]
+
+** 
+   :PROPERTIES:
+   :CUSTOM_ID: plain
+   :END:
+
+[[file:images/D307_1.pdf]]
+
+[[http://programas.etsidi.upm.es/webdav/horarios/]]
+
 
 ** Calendario escolar
 

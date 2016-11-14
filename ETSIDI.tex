@@ -1,4 +1,4 @@
-% Created 2016-11-13 dom 17:13
+% Created 2016-11-14 lun 14:05
 % Intended LaTeX compiler: pdflatex
 \documentclass[spanish, xcolor={usenames,svgnames,dvipsnames}]{beamer}
 \usepackage[utf8]{inputenc}
@@ -47,9 +47,9 @@
 \maketitle
 
 \section{Introducción}
-\label{sec:org19538d4}
+\label{sec:org8c3adba}
 
-\begin{frame}[label={sec:org47394fa}]{Contexto}
+\begin{frame}[label={sec:org570d75b}]{Contexto}
 \begin{itemize}
 \item ETS de Ingeniería con 2700 alumnos en 10 titulaciones diferentes.
 \item Numerosos grupos de matriculación (horarios).
@@ -62,7 +62,7 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:org97a7d5a}]{Contexto}
+\begin{frame}[label={sec:org77e4535}]{Contexto}
 \begin{block}{Necesaria renovación de herramientas}
 \begin{itemize}
 \item Gestión de aulas
@@ -74,9 +74,9 @@
 
 
 \section{Aplicaciones web}
-\label{sec:org4046b28}
+\label{sec:org26d11f5}
 
-\begin{frame}[label={sec:orgac614cc}]{Horarios del profesorado}
+\begin{frame}[label={sec:org5545fb0}]{Horarios del profesorado}
 \begin{block}{Procedimiento}
 \begin{itemize}
 \item Cada profesor tiene un enlace único que le permite cumplimentar (y modificar) sus horarios de docencia y tutorías.
@@ -86,7 +86,7 @@
 \end{itemize}
 \end{block}
 \end{frame}
-\begin{frame}[label={sec:orga014f12}]{}
+\begin{frame}[label={sec:org79c570a}]{}
 \begin{center}
 \includegraphics[width=.9\linewidth]{images/tutorias.png}
 \end{center}
@@ -94,13 +94,13 @@
 \url{http://programas.etsidi.upm.es/SOA/tutorias/}
 \end{frame}
 
-\begin{frame}[label={sec:orgbb9dbe3}]{}
+\begin{frame}[label={sec:orge52acd9}]{}
 \begin{center}
 \includegraphics[width=.9\linewidth]{images/tutorias_OPL.pdf}
 \end{center}
 \end{frame}
 
-\begin{frame}[label={sec:orge53ea33}]{}
+\begin{frame}[label={sec:org723df11}]{}
 \begin{center}
 \includegraphics[width=.9\linewidth]{images/buscador.png}
 \end{center}
@@ -108,7 +108,7 @@
 \url{http://programas.etsidi.upm.es/SOA/buscador/}
 \end{frame}
 
-\begin{frame}[label={sec:orgf86742c}]{Horarios del profesorado}
+\begin{frame}[label={sec:orgf6e9853}]{Horarios del profesorado}
 \begin{block}{Aspectos importantes del código}
 \begin{itemize}
 \item Aplicaciones basadas en shiny con la ayuda de \href{https://daattali.com/shiny/shinyjs-demo/}{shinyjs}
@@ -118,12 +118,40 @@
 \end{itemize}
 \end{block}
 \end{frame}
-\begin{frame}[label={sec:org1b9d7aa}]{Horarios docentes}
+\begin{frame}[label={sec:org71b2763}]{Horarios docentes}
+\begin{itemize}
+\item Aplicación shiny basada en \href{http://jrowen.github.io/rhandsontable/}{rhandsontable} (tabla editable)
+\item Produce:
+\begin{itemize}
+\item Ficheros PDF mediante \href{https://github.com/SOA-ETSIDI/horarios/blob/master/csv2tt.R}{una función} basada en una \href{https://github.com/SOA-ETSIDI/horarios/blob/master/timetable.tex}{plantilla \LaTeX{}} que usa \href{https://en.wikipedia.org/wiki/PGF/TikZ}{TikZ}
+\item Ficheros iCalendar mediante dos \href{https://github.com/SOA-ETSIDI/misc/blob/master/funciones.R}{funciones propias}.
+\end{itemize}
+\end{itemize}
+\end{frame}
+\begin{frame}[label={sec:org108e578}]{}
+\begin{center}
+\includegraphics[width=.9\linewidth]{images/horarios.png}
+\end{center}
 \end{frame}
 
-\begin{frame}[label={sec:org0d227e5}]{Calendario escolar}
+\begin{frame}[label={sec:org65f1b3a}]{}
+\begin{center}
+\includegraphics[width=.9\linewidth]{images/horarios_tt.png}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:org7a07d98}]{}
+\begin{center}
+\includegraphics[width=.9\linewidth]{images/D307_1.pdf}
+\end{center}
+
+\url{http://programas.etsidi.upm.es/webdav/horarios/}
+\end{frame}
+
+
+\begin{frame}[label={sec:org4f4b462}]{Calendario escolar}
 \end{frame}
 
 \section{Análisis y representación de datos}
-\label{sec:org5317156}
+\label{sec:org01ffcde}
 \end{document}
