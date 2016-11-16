@@ -1,4 +1,4 @@
-% Created 2016-11-14 lun 14:05
+% Created 2016-11-16 mié 13:43
 % Intended LaTeX compiler: pdflatex
 \documentclass[spanish, xcolor={usenames,svgnames,dvipsnames}]{beamer}
 \usepackage[utf8]{inputenc}
@@ -47,9 +47,9 @@
 \maketitle
 
 \section{Introducción}
-\label{sec:org8c3adba}
+\label{sec:org759568f}
 
-\begin{frame}[label={sec:org570d75b}]{Contexto}
+\begin{frame}[label={sec:org6e3776a}]{Contexto}
 \begin{itemize}
 \item ETS de Ingeniería con 2700 alumnos en 10 titulaciones diferentes.
 \item Numerosos grupos de matriculación (horarios).
@@ -62,7 +62,7 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:org77e4535}]{Contexto}
+\begin{frame}[label={sec:orgd62443a}]{Contexto}
 \begin{block}{Necesaria renovación de herramientas}
 \begin{itemize}
 \item Gestión de aulas
@@ -74,9 +74,27 @@
 
 
 \section{Aplicaciones web}
-\label{sec:org26d11f5}
+\label{sec:org54e3eec}
 
-\begin{frame}[label={sec:org5545fb0}]{Horarios del profesorado}
+\begin{frame}[label={sec:orgdb900a7}]{Catálogo}
+\begin{itemize}
+\item Horarios del profesorado
+\item Horarios docentes
+\item Calendario
+\item Exámenes (en construcción)
+\end{itemize}
+
+\begin{block}{Repositorio}
+\url{https://github.com/SOA-ETSIDI/}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:org2078c63}]{Horarios del profesorado}
+\begin{block}{}
+\url{https://github.com/SOA-ETSIDI/tutorias}
+\url{https://github.com/SOA-ETSIDI/buscador}
+\end{block}
+
 \begin{block}{Procedimiento}
 \begin{itemize}
 \item Cada profesor tiene un enlace único que le permite cumplimentar (y modificar) sus horarios de docencia y tutorías.
@@ -86,7 +104,8 @@
 \end{itemize}
 \end{block}
 \end{frame}
-\begin{frame}[label={sec:org79c570a}]{}
+
+\begin{frame}[label={sec:org644e12e}]{}
 \begin{center}
 \includegraphics[width=.9\linewidth]{images/tutorias.png}
 \end{center}
@@ -94,13 +113,13 @@
 \url{http://programas.etsidi.upm.es/SOA/tutorias/}
 \end{frame}
 
-\begin{frame}[label={sec:orge52acd9}]{}
+\begin{frame}[label={sec:orgdaf7ef3}]{}
 \begin{center}
 \includegraphics[width=.9\linewidth]{images/tutorias_OPL.pdf}
 \end{center}
 \end{frame}
 
-\begin{frame}[label={sec:org723df11}]{}
+\begin{frame}[label={sec:org77deb07}]{}
 \begin{center}
 \includegraphics[width=.9\linewidth]{images/buscador.png}
 \end{center}
@@ -108,7 +127,7 @@
 \url{http://programas.etsidi.upm.es/SOA/buscador/}
 \end{frame}
 
-\begin{frame}[label={sec:orgf6e9853}]{Horarios del profesorado}
+\begin{frame}[label={sec:org2fe8bf3}]{Horarios del profesorado}
 \begin{block}{Aspectos importantes del código}
 \begin{itemize}
 \item Aplicaciones basadas en shiny con la ayuda de \href{https://daattali.com/shiny/shinyjs-demo/}{shinyjs}
@@ -118,7 +137,7 @@
 \end{itemize}
 \end{block}
 \end{frame}
-\begin{frame}[label={sec:org71b2763}]{Horarios docentes}
+\begin{frame}[label={sec:orgfb39c1d}]{Horarios docentes}
 \begin{itemize}
 \item Aplicación shiny basada en \href{http://jrowen.github.io/rhandsontable/}{rhandsontable} (tabla editable)
 \item Produce:
@@ -127,20 +146,23 @@
 \item Ficheros iCalendar mediante dos \href{https://github.com/SOA-ETSIDI/misc/blob/master/funciones.R}{funciones propias}.
 \end{itemize}
 \end{itemize}
+\begin{block}{}
+\url{https://github.com/SOA-ETSIDI/horarios}
+\end{block}
 \end{frame}
-\begin{frame}[label={sec:org108e578}]{}
+\begin{frame}[label={sec:org995b659}]{}
 \begin{center}
 \includegraphics[width=.9\linewidth]{images/horarios.png}
 \end{center}
 \end{frame}
 
-\begin{frame}[label={sec:org65f1b3a}]{}
+\begin{frame}[label={sec:org3673986}]{}
 \begin{center}
 \includegraphics[width=.9\linewidth]{images/horarios_tt.png}
 \end{center}
 \end{frame}
 
-\begin{frame}[label={sec:org7a07d98}]{}
+\begin{frame}[label={sec:org5a1762e}]{}
 \begin{center}
 \includegraphics[width=.9\linewidth]{images/D307_1.pdf}
 \end{center}
@@ -149,9 +171,29 @@
 \end{frame}
 
 
-\begin{frame}[label={sec:org4f4b462}]{Calendario escolar}
+\begin{frame}[label={sec:orgb65c6a2}]{Calendario escolar}
+\begin{itemize}
+\item Aplicación shiny basada en \href{http://jrowen.github.io/rhandsontable/}{rhandsontable} (tabla editable)
+\item Produce:
+\begin{itemize}
+\item Ficheros PDF mediante \href{https://github.com/SOA-ETSIDI/calendario/blob/master/csv2pdf.R}{una función} basada en una \href{https://github.com/SOA-ETSIDI/calendario/blob/master/documentCal.tex}{plantilla \LaTeX{}} que usa \href{https://en.wikipedia.org/wiki/PGF/TikZ}{TikZ}
+\item Ficheros iCalendar mediante dos \href{https://github.com/SOA-ETSIDI/calendario/blob/master/csv2ics.R}{funciones propias}.
+\end{itemize}
+\end{itemize}
+\begin{block}{}
+\url{https://github.com/SOA-ETSIDI/calendario}
+\end{block}
 \end{frame}
 
-\section{Análisis y representación de datos}
-\label{sec:org01ffcde}
+\begin{frame}[label={sec:org981d284}]{}
+\begin{center}
+\includegraphics[width=.9\linewidth]{images/webdav_cal.png}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:orge3691da}]{}
+\begin{center}
+\includegraphics[width=.9\linewidth]{images/Calendario_Grado_2016_2017.pdf}
+\end{center}
+\end{frame}
 \end{document}

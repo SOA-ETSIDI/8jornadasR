@@ -29,12 +29,26 @@
 
 * Aplicaciones web
 
+** Catálogo
+- Horarios del profesorado
+- Horarios docentes
+- Calendario
+- Exámenes (en construcción)
+
+*** Repositorio
+https://github.com/SOA-ETSIDI/
+
 ** Horarios del profesorado
+*** 
+https://github.com/SOA-ETSIDI/tutorias
+https://github.com/SOA-ETSIDI/buscador
+
 *** Procedimiento
 - Cada profesor tiene un enlace único que le permite cumplimentar (y modificar) sus horarios de docencia y tutorías.
 - Cada director del departamento tiene un enlace privado para revisar estos horarios y publicarlos.
 - Una web recopila los horarios de todos los profesores, una vez publicados.
 - Otra web permite la búsqueda libre.
+
 ** 
    :PROPERTIES:
    :CUSTOM_ID: plain
@@ -68,6 +82,8 @@ http://programas.etsidi.upm.es/SOA/buscador/
 - Produce:
   - Ficheros PDF mediante [[https://github.com/SOA-ETSIDI/horarios/blob/master/csv2tt.R][una función]] basada en una [[https://github.com/SOA-ETSIDI/horarios/blob/master/timetable.tex][plantilla LaTeX]] que usa [[https://en.wikipedia.org/wiki/PGF/TikZ][TikZ]]
   - Ficheros iCalendar mediante dos [[https://github.com/SOA-ETSIDI/misc/blob/master/funciones.R][funciones propias]].
+*** 
+https://github.com/SOA-ETSIDI/horarios
 ** 
    :PROPERTIES:
    :CUSTOM_ID: plain
@@ -91,5 +107,23 @@ http://programas.etsidi.upm.es/SOA/buscador/
 
 
 ** Calendario escolar
+- Aplicación shiny basada en [[http://jrowen.github.io/rhandsontable/][rhandsontable]] (tabla editable)
+- Produce:
+  - Ficheros PDF mediante [[https://github.com/SOA-ETSIDI/calendario/blob/master/csv2pdf.R][una función]] basada en una [[https://github.com/SOA-ETSIDI/calendario/blob/master/documentCal.tex][plantilla LaTeX]] que usa [[https://en.wikipedia.org/wiki/PGF/TikZ][TikZ]]
+  - Ficheros iCalendar mediante dos [[https://github.com/SOA-ETSIDI/calendario/blob/master/csv2ics.R][funciones propias]].
+*** 
+https://github.com/SOA-ETSIDI/calendario
 
-* Análisis y representación de datos
+** 
+   :PROPERTIES:
+   :CUSTOM_ID: plain
+   :END:
+
+[[file:images/webdav_cal.png]]
+
+** 
+   :PROPERTIES:
+   :CUSTOM_ID: plain
+   :END:
+
+[[file:images/Calendario_Grado_2016_2017.pdf]]
