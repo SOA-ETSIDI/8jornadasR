@@ -30,19 +30,18 @@
 * Aplicaciones web
 
 ** Catálogo
+
+*** Repositorio
+https://github.com/SOA-ETSIDI/
+*** 
 - Horarios del profesorado
 - Horarios docentes
 - Calendario
 - Exámenes (en construcción)
 
-*** Repositorio
-https://github.com/SOA-ETSIDI/
 
+* Horarios del profesorado
 ** Horarios del profesorado
-*** 
-https://github.com/SOA-ETSIDI/tutorias
-https://github.com/SOA-ETSIDI/buscador
-
 *** Procedimiento
 - Cada profesor tiene un enlace único que le permite cumplimentar (y modificar) sus horarios de docencia y tutorías.
 - Cada director del departamento tiene un enlace privado para revisar estos horarios y publicarlos.
@@ -50,26 +49,27 @@ https://github.com/SOA-ETSIDI/buscador
 - Otra web permite la búsqueda libre.
 
 ** 
+
+Cada profesor tiene un enlace único que le permite cumplimentar (y modificar) sus horarios de docencia y tutorías: http://programas.etsidi.upm.es/SOA/docencia/?XYZ
+
+[[file:images/formulario-docencia.png]]
+
+** 
    :PROPERTIES:
    :CUSTOM_ID: plain
    :END:
+Una web recopila los horarios de todos los profesores: http://programas.etsidi.upm.es/SOA/tutorias/
+
 [[file:images/tutorias.png]]
 
-http://programas.etsidi.upm.es/SOA/tutorias/
-
 ** 
    :PROPERTIES:
    :CUSTOM_ID: plain
    :END:
-[[file:images/tutorias_OPL.pdf]]
-
-** 
-   :PROPERTIES:
-   :CUSTOM_ID: plain
-   :END:
+Otra web permite la búsqueda libre: http://programas.etsidi.upm.es/SOA/buscador/
 [[file:images/buscador.png]]
 
-http://programas.etsidi.upm.es/SOA/buscador/
+
 
 ** Horarios del profesorado
 *** Aspectos importantes del código
@@ -77,36 +77,52 @@ http://programas.etsidi.upm.es/SOA/buscador/
 - [[https://github.com/Rdatatable/data.table/wiki][DT]] (interfaz para DataTables de JavaScript) en modo lectura y escritura ([[https://yihui.shinyapps.io/DT-proxy/][dataTableProxy]]).
 - [[https://github.com/Rdatatable/data.table/wiki][data.table]] detrás del escenario
 - PDF generado automáticamente a través de [[http://orgmode.org/][Org]] (y [[https://www.ctan.org/pkg/tcolorbox][tcolorbox]] de LaTeX)
-** Horarios docentes
-- Aplicación shiny basada en [[http://jrowen.github.io/rhandsontable/][rhandsontable]] (tabla editable)
-- Produce:
-  - Ficheros PDF mediante [[https://github.com/SOA-ETSIDI/horarios/blob/master/csv2tt.R][una función]] basada en una [[https://github.com/SOA-ETSIDI/horarios/blob/master/timetable.tex][plantilla LaTeX]] que usa [[https://en.wikipedia.org/wiki/PGF/TikZ][TikZ]]
-  - Ficheros iCalendar mediante dos [[https://github.com/SOA-ETSIDI/misc/blob/master/funciones.R][funciones propias]].
-*** 
-https://github.com/SOA-ETSIDI/horarios
+
+** Ejemplo del PDF
+   :PROPERTIES:
+   :CUSTOM_ID: plain
+   :END:
+[[file:images/tutorias_OPL.pdf]]
+
+
+* Horarios docentes
+
 ** 
    :PROPERTIES:
    :CUSTOM_ID: plain
    :END:
+*** 
+https://github.com/SOA-ETSIDI/horarios
+
 [[file:images/horarios.png]]
 
 ** 
    :PROPERTIES:
    :CUSTOM_ID: plain
    :END:
+*** 
+https://github.com/SOA-ETSIDI/horarios
+
 [[file:images/horarios_tt.png]]
 
-** 
+** Aspectos importantes del código
+- Aplicación shiny basada en [[http://jrowen.github.io/rhandsontable/][rhandsontable]] (tabla editable)
+- Produce:
+  - Ficheros PDF mediante [[https://github.com/SOA-ETSIDI/horarios/blob/master/csv2tt.R][una función]] basada en una [[https://github.com/SOA-ETSIDI/horarios/blob/master/timetable.tex][plantilla LaTeX]] que usa [[https://en.wikipedia.org/wiki/PGF/TikZ][TikZ]]
+  - Ficheros iCalendar mediante dos [[https://github.com/SOA-ETSIDI/misc/blob/master/funciones.R][funciones propias]].
+
+** Disponibles en servidor
    :PROPERTIES:
    :CUSTOM_ID: plain
    :END:
 
-[[file:images/D307_1.pdf]]
-
 [[http://programas.etsidi.upm.es/webdav/horarios/]]
 
+[[file:images/D307_1.pdf]]
 
-** Calendario escolar
+
+* Calendario escolar
+** Aspectos importantes del código
 - Aplicación shiny basada en [[http://jrowen.github.io/rhandsontable/][rhandsontable]] (tabla editable)
 - Produce:
   - Ficheros PDF mediante [[https://github.com/SOA-ETSIDI/calendario/blob/master/csv2pdf.R][una función]] basada en una [[https://github.com/SOA-ETSIDI/calendario/blob/master/documentCal.tex][plantilla LaTeX]] que usa [[https://en.wikipedia.org/wiki/PGF/TikZ][TikZ]]
