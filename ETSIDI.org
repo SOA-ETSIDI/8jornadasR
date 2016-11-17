@@ -48,13 +48,13 @@ https://github.com/SOA-ETSIDI/
 - Una web recopila los horarios de todos los profesores, una vez publicados.
 - Otra web permite la búsqueda libre.
 
-** 
+** Introducción de datos
 
 Cada profesor tiene un enlace único que le permite cumplimentar (y modificar) sus horarios de docencia y tutorías: http://programas.etsidi.upm.es/SOA/docencia/?XYZ
 
 [[file:images/formulario-docencia.png]]
 
-** 
+** Publicación para alumnos
    :PROPERTIES:
    :CUSTOM_ID: plain
    :END:
@@ -62,13 +62,12 @@ Una web recopila los horarios de todos los profesores: http://programas.etsidi.u
 
 [[file:images/tutorias.png]]
 
-** 
+** Buscador
    :PROPERTIES:
    :CUSTOM_ID: plain
    :END:
 Otra web permite la búsqueda libre: http://programas.etsidi.upm.es/SOA/buscador/
 [[file:images/buscador.png]]
-
 
 
 ** Horarios del profesorado
@@ -87,7 +86,7 @@ Otra web permite la búsqueda libre: http://programas.etsidi.upm.es/SOA/buscador
 
 * Horarios docentes
 
-** 
+** Web para modificar datos 
    :PROPERTIES:
    :CUSTOM_ID: plain
    :END:
@@ -96,7 +95,7 @@ https://github.com/SOA-ETSIDI/horarios
 
 [[file:images/horarios.png]]
 
-** 
+** Y para ver el resultado
    :PROPERTIES:
    :CUSTOM_ID: plain
    :END:
@@ -122,6 +121,22 @@ https://github.com/SOA-ETSIDI/horarios
 
 
 * Calendario escolar
+
+** Web para modificar datos 
+   :PROPERTIES:
+   :CUSTOM_ID: plain
+   :END:
+
+[[file:images/webdav_cal.png]]
+
+** Cuyo resultado se vuelca en un servidor público
+   :PROPERTIES:
+   :CUSTOM_ID: plain
+   :END:
+[[http://programas.etsidi.upm.es/webdav/cal/]]
+
+[[file:images/Calendario_Grado_2016_2017.pdf]]
+
 ** Aspectos importantes del código
 - Aplicación shiny basada en [[http://jrowen.github.io/rhandsontable/][rhandsontable]] (tabla editable)
 - Produce:
@@ -129,17 +144,3 @@ https://github.com/SOA-ETSIDI/horarios
   - Ficheros iCalendar mediante dos [[https://github.com/SOA-ETSIDI/calendario/blob/master/csv2ics.R][funciones propias]].
 *** 
 https://github.com/SOA-ETSIDI/calendario
-
-** 
-   :PROPERTIES:
-   :CUSTOM_ID: plain
-   :END:
-
-[[file:images/webdav_cal.png]]
-
-** 
-   :PROPERTIES:
-   :CUSTOM_ID: plain
-   :END:
-
-[[file:images/Calendario_Grado_2016_2017.pdf]]

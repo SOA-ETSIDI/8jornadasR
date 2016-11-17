@@ -1,4 +1,4 @@
-% Created 2016-11-17 jue 15:11
+% Created 2016-11-17 jue 17:42
 % Intended LaTeX compiler: pdflatex
 \documentclass[spanish, xcolor={usenames,svgnames,dvipsnames}]{beamer}
 \usepackage[utf8]{inputenc}
@@ -47,9 +47,9 @@
 \maketitle
 
 \section{Introducción}
-\label{sec:org58ac41f}
+\label{sec:org88a5d8d}
 
-\begin{frame}[label={sec:org57d72ee}]{Contexto}
+\begin{frame}[label={sec:org475812d}]{Contexto}
 \begin{itemize}
 \item ETS de Ingeniería con 2700 alumnos en 10 titulaciones diferentes.
 \item Numerosos grupos de matriculación (horarios).
@@ -62,7 +62,7 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orga5f1ca1}]{Contexto}
+\begin{frame}[label={sec:org3ed4dae}]{Contexto}
 \begin{block}{Necesaria renovación de herramientas}
 \begin{itemize}
 \item Gestión de aulas
@@ -74,9 +74,9 @@
 
 
 \section{Aplicaciones web}
-\label{sec:org13e4080}
+\label{sec:org1c23879}
 
-\begin{frame}[label={sec:org990bb96}]{Catálogo}
+\begin{frame}[label={sec:orgbf32fb2}]{Catálogo}
 \begin{block}{Repositorio}
 \url{https://github.com/SOA-ETSIDI/}
 \end{block}
@@ -92,8 +92,8 @@
 
 
 \section{Horarios del profesorado}
-\label{sec:orgd7f5726}
-\begin{frame}[label={sec:orgaa7e1fe}]{Horarios del profesorado}
+\label{sec:orge30a60a}
+\begin{frame}[label={sec:org4598884}]{Horarios del profesorado}
 \begin{block}{Procedimiento}
 \begin{itemize}
 \item Cada profesor tiene un enlace único que le permite cumplimentar (y modificar) sus horarios de docencia y tutorías.
@@ -104,7 +104,7 @@
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:org8c1140a}]{}
+\begin{frame}[label={sec:orgdcd9d7c}]{Introducción de datos}
 Cada profesor tiene un enlace único que le permite cumplimentar (y modificar) sus horarios de docencia y tutorías: \url{http://programas.etsidi.upm.es/SOA/docencia/?XYZ}
 
 \begin{center}
@@ -112,7 +112,7 @@ Cada profesor tiene un enlace único que le permite cumplimentar (y modificar) s
 \end{center}
 \end{frame}
 
-\begin{frame}[label={sec:orgecc2c45}]{}
+\begin{frame}[label={sec:org5c85101}]{Publicación para alumnos}
 Una web recopila los horarios de todos los profesores: \url{http://programas.etsidi.upm.es/SOA/tutorias/}
 
 \begin{center}
@@ -120,7 +120,7 @@ Una web recopila los horarios de todos los profesores: \url{http://programas.ets
 \end{center}
 \end{frame}
 
-\begin{frame}[label={sec:org23fd66a}]{}
+\begin{frame}[label={sec:orgcd9e5cf}]{Buscador}
 Otra web permite la búsqueda libre: \url{http://programas.etsidi.upm.es/SOA/buscador/}
 \begin{center}
 \includegraphics[width=.9\linewidth]{images/buscador.png}
@@ -128,8 +128,7 @@ Otra web permite la búsqueda libre: \url{http://programas.etsidi.upm.es/SOA/bus
 \end{frame}
 
 
-
-\begin{frame}[label={sec:orgcb0d0e8}]{Horarios del profesorado}
+\begin{frame}[label={sec:org5a9bc66}]{Horarios del profesorado}
 \begin{block}{Aspectos importantes del código}
 \begin{itemize}
 \item Aplicaciones basadas en shiny con la ayuda de \href{https://daattali.com/shiny/shinyjs-demo/}{shinyjs}
@@ -140,7 +139,7 @@ Otra web permite la búsqueda libre: \url{http://programas.etsidi.upm.es/SOA/bus
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:orgca2ad73}]{Ejemplo del PDF}
+\begin{frame}[label={sec:org1c8ce06}]{Ejemplo del PDF}
 \begin{center}
 \includegraphics[width=.9\linewidth]{images/tutorias_OPL.pdf}
 \end{center}
@@ -148,9 +147,9 @@ Otra web permite la búsqueda libre: \url{http://programas.etsidi.upm.es/SOA/bus
 
 
 \section{Horarios docentes}
-\label{sec:org6945691}
+\label{sec:org8b723fe}
 
-\begin{frame}[label={sec:org19a667b}]{}
+\begin{frame}[label={sec:org141bd02}]{Web para modificar datos}
 \begin{block}{}
 \url{https://github.com/SOA-ETSIDI/horarios}
 
@@ -160,7 +159,7 @@ Otra web permite la búsqueda libre: \url{http://programas.etsidi.upm.es/SOA/bus
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:orgf475314}]{}
+\begin{frame}[label={sec:org752caa6}]{Y para ver el resultado}
 \begin{block}{}
 \url{https://github.com/SOA-ETSIDI/horarios}
 
@@ -170,7 +169,7 @@ Otra web permite la búsqueda libre: \url{http://programas.etsidi.upm.es/SOA/bus
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:org8875b87}]{Aspectos importantes del código}
+\begin{frame}[label={sec:org7e0a117}]{Aspectos importantes del código}
 \begin{itemize}
 \item Aplicación shiny basada en \href{http://jrowen.github.io/rhandsontable/}{rhandsontable} (tabla editable)
 \item Produce:
@@ -181,7 +180,7 @@ Otra web permite la búsqueda libre: \url{http://programas.etsidi.upm.es/SOA/bus
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:org36da7f1}]{Disponibles en servidor}
+\begin{frame}[label={sec:org11efe21}]{Disponibles en servidor}
 \url{http://programas.etsidi.upm.es/webdav/horarios/}
 
 \begin{center}
@@ -191,8 +190,23 @@ Otra web permite la búsqueda libre: \url{http://programas.etsidi.upm.es/SOA/bus
 
 
 \section{Calendario escolar}
-\label{sec:org5965db1}
-\begin{frame}[label={sec:org8f7385e}]{Aspectos importantes del código}
+\label{sec:orga88d95f}
+
+\begin{frame}[label={sec:org5de1472}]{Web para modificar datos}
+\begin{center}
+\includegraphics[width=.9\linewidth]{images/webdav_cal.png}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:org09b8e21}]{Cuyo resultado se vuelca en un servidor público}
+\url{http://programas.etsidi.upm.es/webdav/cal/}
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{images/Calendario_Grado_2016_2017.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:orgb2aa798}]{Aspectos importantes del código}
 \begin{itemize}
 \item Aplicación shiny basada en \href{http://jrowen.github.io/rhandsontable/}{rhandsontable} (tabla editable)
 \item Produce:
@@ -204,17 +218,5 @@ Otra web permite la búsqueda libre: \url{http://programas.etsidi.upm.es/SOA/bus
 \begin{block}{}
 \url{https://github.com/SOA-ETSIDI/calendario}
 \end{block}
-\end{frame}
-
-\begin{frame}[label={sec:org3c217c5}]{}
-\begin{center}
-\includegraphics[width=.9\linewidth]{images/webdav_cal.png}
-\end{center}
-\end{frame}
-
-\begin{frame}[label={sec:org1847a9b}]{}
-\begin{center}
-\includegraphics[width=.9\linewidth]{images/Calendario_Grado_2016_2017.pdf}
-\end{center}
 \end{frame}
 \end{document}
