@@ -70,12 +70,20 @@ Otra web permite la búsqueda libre: http://programas.etsidi.upm.es/SOA/buscador
 [[file:images/buscador.png]]
 
 
-** Horarios del profesorado
-*** Aspectos importantes del código
+** Aspectos importantes del código
+
+*** 
 - Aplicaciones basadas en shiny con la ayuda de [[https://daattali.com/shiny/shinyjs-demo/][shinyjs]]
 - [[https://github.com/Rdatatable/data.table/wiki][DT]] (interfaz para DataTables de JavaScript) en modo lectura y escritura ([[https://yihui.shinyapps.io/DT-proxy/][dataTableProxy]]).
 - [[https://github.com/Rdatatable/data.table/wiki][data.table]] detrás del escenario
 - PDF generado automáticamente a través de [[http://orgmode.org/][Org]] (y [[https://www.ctan.org/pkg/tcolorbox][tcolorbox]] de LaTeX)
+*** 
+[[https://github.com/SOA-ETSIDI/tutorias]]
+ 
+https://github.com/SOA-ETSIDI/buscador
+
+
+
 
 ** Ejemplo del PDF
    :PROPERTIES:
@@ -91,8 +99,6 @@ Otra web permite la búsqueda libre: http://programas.etsidi.upm.es/SOA/buscador
    :CUSTOM_ID: plain
    :END:
 *** 
-https://github.com/SOA-ETSIDI/horarios
-
 [[file:images/horarios.png]]
 
 ** Y para ver el resultado
@@ -100,17 +106,9 @@ https://github.com/SOA-ETSIDI/horarios
    :CUSTOM_ID: plain
    :END:
 *** 
-https://github.com/SOA-ETSIDI/horarios
-
 [[file:images/horarios_tt.png]]
 
-** Aspectos importantes del código
-- Aplicación shiny basada en [[http://jrowen.github.io/rhandsontable/][rhandsontable]] (tabla editable)
-- Produce:
-  - Ficheros PDF mediante [[https://github.com/SOA-ETSIDI/horarios/blob/master/csv2tt.R][una función]] basada en una [[https://github.com/SOA-ETSIDI/horarios/blob/master/timetable.tex][plantilla LaTeX]] que usa [[https://en.wikipedia.org/wiki/PGF/TikZ][TikZ]]
-  - Ficheros iCalendar mediante dos [[https://github.com/SOA-ETSIDI/misc/blob/master/funciones.R][funciones propias]].
-
-** Disponibles en servidor
+** Disponibles en servidor público
    :PROPERTIES:
    :CUSTOM_ID: plain
    :END:
@@ -118,6 +116,15 @@ https://github.com/SOA-ETSIDI/horarios
 [[http://programas.etsidi.upm.es/webdav/horarios/]]
 
 [[file:images/D307_1.pdf]]
+
+** Aspectos importantes del código
+*** 
+- Aplicación shiny basada en [[http://jrowen.github.io/rhandsontable/][rhandsontable]] (tabla editable)
+- Produce:
+  - Ficheros PDF mediante [[https://github.com/SOA-ETSIDI/horarios/blob/master/csv2tt.R][una función]] basada en una [[https://github.com/SOA-ETSIDI/horarios/blob/master/timetable.tex][plantilla LaTeX]] que usa [[https://en.wikipedia.org/wiki/PGF/TikZ][TikZ]]
+  - Ficheros iCalendar mediante dos [[https://github.com/SOA-ETSIDI/misc/blob/master/funciones.R][funciones propias]].
+*** 
+https://github.com/SOA-ETSIDI/horarios
 
 
 * Calendario escolar
@@ -127,20 +134,36 @@ https://github.com/SOA-ETSIDI/horarios
    :CUSTOM_ID: plain
    :END:
 
-[[file:images/webdav_cal.png]]
+[[file:images/formulario-calendario.png]]
 
-** Cuyo resultado se vuelca en un servidor público
+** Cuyo resultado se muestra en servidor público
    :PROPERTIES:
    :CUSTOM_ID: plain
    :END:
-[[http://programas.etsidi.upm.es/webdav/cal/]]
+http://programas.etsidi.upm.es/webdav/cal/
+
+[[file:images/webdav_cal.png]]
+
+** Resultado en PDF
+   :PROPERTIES:
+   :CUSTOM_ID: plain
+   :END:
 
 [[file:images/Calendario_Grado_2016_2017.pdf]]
 
 ** Aspectos importantes del código
+*** 
 - Aplicación shiny basada en [[http://jrowen.github.io/rhandsontable/][rhandsontable]] (tabla editable)
 - Produce:
   - Ficheros PDF mediante [[https://github.com/SOA-ETSIDI/calendario/blob/master/csv2pdf.R][una función]] basada en una [[https://github.com/SOA-ETSIDI/calendario/blob/master/documentCal.tex][plantilla LaTeX]] que usa [[https://en.wikipedia.org/wiki/PGF/TikZ][TikZ]]
   - Ficheros iCalendar mediante dos [[https://github.com/SOA-ETSIDI/calendario/blob/master/csv2ics.R][funciones propias]].
 *** 
 https://github.com/SOA-ETSIDI/calendario
+
+** 
+   :PROPERTIES:
+   :BEAMER_opt: plain
+   :END:
+#+BEGIN_CENTER
+\Huge \textsc{Gracias por la atención}
+#+END_CENTER

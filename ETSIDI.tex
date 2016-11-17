@@ -1,4 +1,4 @@
-% Created 2016-11-17 jue 17:42
+% Created 2016-11-17 jue 22:42
 % Intended LaTeX compiler: pdflatex
 \documentclass[spanish, xcolor={usenames,svgnames,dvipsnames}]{beamer}
 \usepackage[utf8]{inputenc}
@@ -47,9 +47,9 @@
 \maketitle
 
 \section{Introducción}
-\label{sec:org88a5d8d}
+\label{sec:org5c9321e}
 
-\begin{frame}[label={sec:org475812d}]{Contexto}
+\begin{frame}[label={sec:orgd093e4d}]{Contexto}
 \begin{itemize}
 \item ETS de Ingeniería con 2700 alumnos en 10 titulaciones diferentes.
 \item Numerosos grupos de matriculación (horarios).
@@ -62,7 +62,7 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:org3ed4dae}]{Contexto}
+\begin{frame}[label={sec:orgb956ca4}]{Contexto}
 \begin{block}{Necesaria renovación de herramientas}
 \begin{itemize}
 \item Gestión de aulas
@@ -74,9 +74,9 @@
 
 
 \section{Aplicaciones web}
-\label{sec:org1c23879}
+\label{sec:org8dde2ce}
 
-\begin{frame}[label={sec:orgbf32fb2}]{Catálogo}
+\begin{frame}[label={sec:org4f92f32}]{Catálogo}
 \begin{block}{Repositorio}
 \url{https://github.com/SOA-ETSIDI/}
 \end{block}
@@ -92,8 +92,8 @@
 
 
 \section{Horarios del profesorado}
-\label{sec:orge30a60a}
-\begin{frame}[label={sec:org4598884}]{Horarios del profesorado}
+\label{sec:orgea25722}
+\begin{frame}[label={sec:org65a38a9}]{Horarios del profesorado}
 \begin{block}{Procedimiento}
 \begin{itemize}
 \item Cada profesor tiene un enlace único que le permite cumplimentar (y modificar) sus horarios de docencia y tutorías.
@@ -104,7 +104,7 @@
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:orgdcd9d7c}]{Introducción de datos}
+\begin{frame}[label={sec:org287cd4f}]{Introducción de datos}
 Cada profesor tiene un enlace único que le permite cumplimentar (y modificar) sus horarios de docencia y tutorías: \url{http://programas.etsidi.upm.es/SOA/docencia/?XYZ}
 
 \begin{center}
@@ -112,7 +112,7 @@ Cada profesor tiene un enlace único que le permite cumplimentar (y modificar) s
 \end{center}
 \end{frame}
 
-\begin{frame}[label={sec:org5c85101}]{Publicación para alumnos}
+\begin{frame}[label={sec:org3d19b59}]{Publicación para alumnos}
 Una web recopila los horarios de todos los profesores: \url{http://programas.etsidi.upm.es/SOA/tutorias/}
 
 \begin{center}
@@ -120,7 +120,7 @@ Una web recopila los horarios de todos los profesores: \url{http://programas.ets
 \end{center}
 \end{frame}
 
-\begin{frame}[label={sec:orgcd9e5cf}]{Buscador}
+\begin{frame}[label={sec:org7c8d8b3}]{Buscador}
 Otra web permite la búsqueda libre: \url{http://programas.etsidi.upm.es/SOA/buscador/}
 \begin{center}
 \includegraphics[width=.9\linewidth]{images/buscador.png}
@@ -128,8 +128,8 @@ Otra web permite la búsqueda libre: \url{http://programas.etsidi.upm.es/SOA/bus
 \end{frame}
 
 
-\begin{frame}[label={sec:org5a9bc66}]{Horarios del profesorado}
-\begin{block}{Aspectos importantes del código}
+\begin{frame}[label={sec:org201d391}]{Aspectos importantes del código}
+\begin{block}{}
 \begin{itemize}
 \item Aplicaciones basadas en shiny con la ayuda de \href{https://daattali.com/shiny/shinyjs-demo/}{shinyjs}
 \item \href{https://github.com/Rdatatable/data.table/wiki}{DT} (interfaz para DataTables de JavaScript) en modo lectura y escritura (\href{https://yihui.shinyapps.io/DT-proxy/}{dataTableProxy}).
@@ -137,9 +137,17 @@ Otra web permite la búsqueda libre: \url{http://programas.etsidi.upm.es/SOA/bus
 \item PDF generado automáticamente a través de \href{http://orgmode.org/}{Org} (y \href{https://www.ctan.org/pkg/tcolorbox}{tcolorbox} de \LaTeX{})
 \end{itemize}
 \end{block}
+\begin{block}{}
+\url{https://github.com/SOA-ETSIDI/tutorias}
+
+\url{https://github.com/SOA-ETSIDI/buscador}
+\end{block}
 \end{frame}
 
-\begin{frame}[label={sec:org1c8ce06}]{Ejemplo del PDF}
+
+
+
+\begin{frame}[label={sec:orgad5d658}]{Ejemplo del PDF}
 \begin{center}
 \includegraphics[width=.9\linewidth]{images/tutorias_OPL.pdf}
 \end{center}
@@ -147,29 +155,34 @@ Otra web permite la búsqueda libre: \url{http://programas.etsidi.upm.es/SOA/bus
 
 
 \section{Horarios docentes}
-\label{sec:org8b723fe}
+\label{sec:org478d22f}
 
-\begin{frame}[label={sec:org141bd02}]{Web para modificar datos}
+\begin{frame}[label={sec:org242b854}]{Web para modificar datos}
 \begin{block}{}
-\url{https://github.com/SOA-ETSIDI/horarios}
-
 \begin{center}
 \includegraphics[width=.9\linewidth]{images/horarios.png}
 \end{center}
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:org752caa6}]{Y para ver el resultado}
+\begin{frame}[label={sec:org3fdbc52}]{Y para ver el resultado}
 \begin{block}{}
-\url{https://github.com/SOA-ETSIDI/horarios}
-
 \begin{center}
 \includegraphics[width=.9\linewidth]{images/horarios_tt.png}
 \end{center}
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:org7e0a117}]{Aspectos importantes del código}
+\begin{frame}[label={sec:org5ae3fd2}]{Disponibles en servidor público}
+\url{http://programas.etsidi.upm.es/webdav/horarios/}
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{images/D307_1.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:org89554b7}]{Aspectos importantes del código}
+\begin{block}{}
 \begin{itemize}
 \item Aplicación shiny basada en \href{http://jrowen.github.io/rhandsontable/}{rhandsontable} (tabla editable)
 \item Produce:
@@ -178,35 +191,38 @@ Otra web permite la búsqueda libre: \url{http://programas.etsidi.upm.es/SOA/bus
 \item Ficheros iCalendar mediante dos \href{https://github.com/SOA-ETSIDI/misc/blob/master/funciones.R}{funciones propias}.
 \end{itemize}
 \end{itemize}
-\end{frame}
-
-\begin{frame}[label={sec:org11efe21}]{Disponibles en servidor}
-\url{http://programas.etsidi.upm.es/webdav/horarios/}
-
-\begin{center}
-\includegraphics[width=.9\linewidth]{images/D307_1.pdf}
-\end{center}
+\end{block}
+\begin{block}{}
+\url{https://github.com/SOA-ETSIDI/horarios}
+\end{block}
 \end{frame}
 
 
 \section{Calendario escolar}
-\label{sec:orga88d95f}
+\label{sec:orgb19c219}
 
-\begin{frame}[label={sec:org5de1472}]{Web para modificar datos}
+\begin{frame}[label={sec:org41f8539}]{Web para modificar datos}
+\begin{center}
+\includegraphics[width=.9\linewidth]{images/formulario-calendario.png}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:orgf6abead}]{Cuyo resultado se muestra en servidor público}
+\url{http://programas.etsidi.upm.es/webdav/cal/}
+
 \begin{center}
 \includegraphics[width=.9\linewidth]{images/webdav_cal.png}
 \end{center}
 \end{frame}
 
-\begin{frame}[label={sec:org09b8e21}]{Cuyo resultado se vuelca en un servidor público}
-\url{http://programas.etsidi.upm.es/webdav/cal/}
-
+\begin{frame}[label={sec:org4aace17}]{Resultado en PDF}
 \begin{center}
 \includegraphics[width=.9\linewidth]{images/Calendario_Grado_2016_2017.pdf}
 \end{center}
 \end{frame}
 
-\begin{frame}[label={sec:orgb2aa798}]{Aspectos importantes del código}
+\begin{frame}[label={sec:org3c5afae}]{Aspectos importantes del código}
+\begin{block}{}
 \begin{itemize}
 \item Aplicación shiny basada en \href{http://jrowen.github.io/rhandsontable/}{rhandsontable} (tabla editable)
 \item Produce:
@@ -215,8 +231,15 @@ Otra web permite la búsqueda libre: \url{http://programas.etsidi.upm.es/SOA/bus
 \item Ficheros iCalendar mediante dos \href{https://github.com/SOA-ETSIDI/calendario/blob/master/csv2ics.R}{funciones propias}.
 \end{itemize}
 \end{itemize}
+\end{block}
 \begin{block}{}
 \url{https://github.com/SOA-ETSIDI/calendario}
 \end{block}
+\end{frame}
+
+\begin{frame}[plain,label={sec:orgf31eaa3}]{}
+\begin{center}
+\Huge \textsc{Gracias por la atención}
+\end{center}
 \end{frame}
 \end{document}
